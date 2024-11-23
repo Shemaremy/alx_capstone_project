@@ -162,9 +162,6 @@ function Part4() {
                 <div className="cert_card">
                     <div className="upper_cert">
                         <img className="cert_img" src={WorkingOnIt} alt="" />
-                        <div className="info">
-                            <button className="essential_download" id="freecodecamp">Download</button>
-                        </div> 
                     </div>
                     <div className="lower_cert">
                         <h4 className="cert_name">Freecodecamp</h4>
@@ -174,9 +171,6 @@ function Part4() {
                 <div className="cert_card">
                     <div className="upper_cert">
                         <img className="cert_img" src={EssentialDocs} alt="" />
-                        <div className="info">
-                            <button className="essential_download" id="essentials">Download</button>
-                        </div>                        
                     </div>
                     <div className="lower_cert">
                         <h4 className="cert_name">Essentials</h4>

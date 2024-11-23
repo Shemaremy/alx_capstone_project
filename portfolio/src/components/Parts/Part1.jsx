@@ -69,100 +69,12 @@ function Part1 () {
             downloadButton.removeEventListener('click', handleDownload);
           }
         };
-      }, []);
-
-
-
-
-
-
-
-
-
-    // Smooth transitions for the headings and frontpage words
-    useEffect(() => {
-        // HEADING (h1, h2) TRANSITIONS
-        const headings = document.querySelectorAll('.heading');
-        headings.forEach((heading, index) => {
-            setTimeout(() => {
-                heading.classList.add('show-heading');
-            }, index * 1300);
-        });
-
-        // THE PARAGRAPH TRANSITIONS (but from left to right)
-        const paragraph = document.getElementById("animated-paragraph");
-        const text = paragraph.textContent;
-        paragraph.textContent = "";
-
-        for (let i = 0; i < text.length; i++) {
-            const span = document.createElement("span");
-            span.textContent = text[i];
-            span.style.animationDelay = `${i * 0.1}s`;
-            paragraph.appendChild(span);
-        }
-
-        // THE SOCIAL MEDIA SMOOTH TRANSITIONS
-        const socialWrapper = document.querySelector('.all_icons');
-        socialWrapper.style.opacity = '0';
-        socialWrapper.style.visibility = 'hidden';
-        setTimeout(() => {
-            socialWrapper.style.transition = 'opacity 1s ease, visibility 1s';
-            socialWrapper.style.opacity = '1';
-            socialWrapper.style.visibility = 'visible';
-        }, 3000);
-
-        // SMOOTH TRANSITION FOR THE BUTTON
-        const buttonWrapper = document.querySelector('.coffee-button');
-        buttonWrapper.style.opacity = '0';
-        buttonWrapper.style.visibility = 'hidden';
-        setTimeout(() => {
-            buttonWrapper.style.transition = 'opacity 1s ease, visibility 1s';
-            buttonWrapper.style.opacity = '1';
-            buttonWrapper.style.visibility = 'visible';
-        }, 3500);
-
-        // SMOOTH TRANSITION FOR THE RIGHT ME PHOTO
-        const photoWrapper = document.querySelector('.My_photo');
-        photoWrapper.style.opacity = '0';
-        photoWrapper.style.visibility = 'hidden';
-        setTimeout(() => {
-            photoWrapper.style.transition = 'opacity 1s ease, visibility 1s';
-            photoWrapper.style.opacity = '1';
-            photoWrapper.style.visibility = 'visible';
-        }, 3500);
-
-        // SMOOTH TRANSITION FOR THE NAVIGATION LINKS
-        const navLinksWrapper = document.querySelector('.desk_links');
-        navLinksWrapper.style.opacity = '0';
-        navLinksWrapper.style.visibility = 'hidden';
-        setTimeout(() => {
-            navLinksWrapper.style.transition = 'opacity 1s ease, visibility 1s';
-            navLinksWrapper.style.opacity = '1';
-            navLinksWrapper.style.visibility = 'visible';
-        }, 2000);
-
     }, []);
 
- 
 
 
 
-    // Effect for smoothness in scrolling transitions
-    useEffect(() => {
-        const handleScroll = () => {
-            if (window.pageYOffset > 100) {
-                document.querySelector("header").classList.add('is-scrolling');
-            } else {
-                document.querySelector("header").classList.remove('is-scrolling');
-            }
-        };
 
-        window.addEventListener('scroll', handleScroll);
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
 
 
 

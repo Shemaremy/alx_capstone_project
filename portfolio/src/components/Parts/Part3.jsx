@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import './CSS/Part3.css';
-//import Verve from '../../images/Projects/Portrait/Verve1.jpg';
 import Verve from '../../images/Projects/Verve.png';
 import Gitbit from '../../images/Projects/Gitbit.png';
 import gakwandi from '../../images/Projects/gakwandi.png';
@@ -9,9 +8,6 @@ import Quote from '../../images/Projects/Portrait/Quote machine.jpg';
 import Calculator from '../../images/Projects/Portrait/calculator.jpg';
 import Clock from '../../images/Projects/Portrait/Clock.jpg';
 import Drum from '../../images/Projects/Portrait/Drum machine.jpg';
-
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 
 

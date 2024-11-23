@@ -421,14 +421,6 @@ header
 }
 
 
-/* HEADING (h2, h1) ANIMATIONS MAN */
-
-.heading {
-    opacity: 0; /* Start with the headings invisible */
-    transform: translateY(20px); /* Shift the headings downwards initially */
-    transition: opacity 1s, transform 1s; /* Apply smooth transition for opacity and transform */
-    transition-delay: 1s;
-}
 
 /* Define the animation when the first heading becomes visible */
 .heading.show-heading:first-child {
