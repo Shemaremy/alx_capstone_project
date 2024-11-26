@@ -20,8 +20,8 @@ def submit_form():
         message = data.get('Message')
 
         msg = Mail(
-            from_email='your_email@example.com',
-            to_emails='recipient@example.com',
+            from_email='remyshema20@gmail.com',
+            to_emails='shemaremy2003@gmail.com',
             subject='New Form Submission',
             html_content=f"""
                 <p><strong>Name:</strong> {name}</p>
