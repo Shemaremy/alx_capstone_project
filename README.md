@@ -34,7 +34,7 @@ JavaScript (Reactjs): To add interactivity and dynamic features, enhancing the u
 
 
 ## Demo: 
-- https://remyshema.netlify.app
+- https://shemaremy.netlify.app
 
 
 ## Contact information: 
