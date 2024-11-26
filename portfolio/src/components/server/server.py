@@ -5,7 +5,8 @@ from sendgrid.helpers.mail import Mail
 from dotenv import load_dotenv
 from flask_cors import CORS
 
-# SENDGRID_API_KEY=SG.9chAMWduRDCMe2aCL9LnWA.D3YNJPXOvSXs2f9BMYdD9mt7eRDKIXABcN_YUbGvu
+# SENDGRID_API_KEY=SG.9chAMWduRDCMe2aCL9LnWA.
+# D3YNJPXOvSXs2f9BMYdD9mt7eRDKIXABcN_YUbGvu_4
 
 load_dotenv()
 
