@@ -17,7 +17,7 @@ function Part7() {
         setLoading(true);
         async function loginUser() {
             try {
-              const response = await fetch('https://portfolio-form-server.glitch.me/submit', {
+              const response = await fetch('http://192.168.0.104:5000/submit', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ Name, Email, Message}),
@@ -33,10 +33,12 @@ function Part7() {
               } else {
                 alert(`Error: ${data.message}`);
                 console.error('Login failed:', data.message);
+                setLoading(false)
               }
             } catch (error) {
               console.error('Error:', error);
               alert('Error: Something went wrong. Please try again.');
+              setLoading(false)
             }
         }
         loginUser();

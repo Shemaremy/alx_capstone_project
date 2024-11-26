@@ -3,10 +3,14 @@ from flask import Flask, request, jsonify
 from sendgrid import SendGridAPIClient
 from sendgrid.helpers.mail import Mail
 from dotenv import load_dotenv
+from flask_cors import CORS
+
+# SENDGRID_API_KEY=SG.9chAMWduRDCMe2aCL9LnWA.D3YNJPXOvSXs2f9BMYdD9mt7eRDKIXABcN_YUbGvu
 
 load_dotenv()
 
 app = Flask(__name__)
+CORS(app)
 
 SENDGRID_API_KEY = os.getenv('SENDGRID_API_KEY')
 PORT = int(os.getenv('PORT', 5000))
@@ -29,6 +33,7 @@ def submit_form():
                 <p><strong>Message:</strong> {message}</p>
             """
         )
+
 
         sg = SendGridAPIClient(SENDGRID_API_KEY)
         sg.send(msg)
