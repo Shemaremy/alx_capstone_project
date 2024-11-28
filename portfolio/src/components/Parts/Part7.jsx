@@ -17,7 +17,7 @@ function Part7() {
         setLoading(true);
         async function loginUser() {
             try {
-              const response = await fetch('http://192.168.0.104:5000/submit', {
+              const response = await fetch('http://192.168.0.100:5000/submit', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ Name, Email, Message}),
